@@ -1,0 +1,25 @@
+<p>linkedlist works!</p>
+<form #form ='ngForm' class=" "style="width:20%;">
+
+
+  <input type="text"name='data' ngModel>
+  <button type="submit"(click)=add()>add</button>
+
+  <input type="text"name='data2' ngModel>
+  <button type="submit"(click)=find()>find</button>
+  <input type="text"name='data3' ngModel>
+  <button type="submit"(click)=remove()>remove</button>
+  <br>
+
+<button (click)=print()>display</button>
+</form>
+<div  class="d-flex flex-row ">
+  <div class=" card m-1"style="width:10%" *ngFor="let item of arr">
+    <div class=" card-body bg-success text-white">
+      <div >{{item}}</div>
+    </div>
+  </div>
+
+</div>
+
+

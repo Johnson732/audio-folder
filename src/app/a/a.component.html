@@ -1,0 +1,8 @@
+<form (ngSubmit)="submitPrompt()"></form>
+  <div class="form-group">
+    <label for="prompt">Enter Prompt:</label>
+    <input type="text" class="form-control" id="prompt" name="prompt" [(ngModel)]="userInput" required>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+<img *ngIf="output" [src]="output" alt="Generated Image">
